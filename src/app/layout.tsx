@@ -1,7 +1,9 @@
 import type { Metadata } from 'next';
 import localFont from 'next/font/local';
+import '@stream-io/video-react-sdk/dist/css/styles.css';
+
 import './globals.css';
-import { ClerkProvider, RedirectToSignIn, SignedIn, SignedOut } from '@clerk/nextjs';
+import { RedirectToSignIn, SignedIn, SignedOut } from '@clerk/nextjs';
 import ConvexClerkProvider from '@/components/Providers/ConvexClerkProvider';
 import { ThemeProvider } from '@/components/Providers/ThemeProvider';
 import Navbar from '@/components/Navbar';
